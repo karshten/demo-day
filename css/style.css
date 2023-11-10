@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: url("../img/unsplash.png") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form {
+    width: 463px;
+    height: 362px;
+    background: rgba(247, 247, 247, 50%);
+    text-align: center;
+    border-radius: 0 16px 0 16px;
+    padding: 23px;
+}
+
+.form h3 {
+    color: #0B0B0B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 36px;
+}
+
+
+input {
+    height: 44px;
+    border: none;
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 306px;
+    border-radius: 8px;
+}
+
+#btn {
+    width: 306px;
+    height: 35px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #EFEFEF;
+    background: #2E8419;
+    margin-top: 44px;
+}
+
+.okay {
+    display: none;
+    margin-top: 80px;
+}
+
+.password {
+	position: relative;
+}
+
+.password-control {
+	position: absolute;
+	top: 11px;
+	right: 10px;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background: url(../img/visibility_off.svg) 0 0 no-repeat;
+}
+.password-control.view {
+	background: url(../img/visibility.svg) 0 0 no-repeat;
+}
+
+@media (max-width: 460px) {
+    .form {
+        width: 310px;
+    }
+    
+    .inputs, input, #btn {
+        width: 100%;
+    }
+}
